@@ -1,6 +1,6 @@
-# DVF_WP2
+# DVFwp2
 
-`DVF_WP2` is an R package offers an interface to look at WP2 results from the H2020 Diversifood projet.
+`DVFwp2` is an R package offers an interface to look at WP2 results from the H2020 Diversifood projet.
 
 The R code is under licence GPL-3.
 
