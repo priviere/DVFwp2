@@ -1,0 +1,22 @@
+Package: DVFwp2
+Type: Package
+Title: Results from WP2 of diversifood
+Version: 0.1
+Encoding: UTF-8
+Date: 2018-10-20
+Authors@R: c(
+    person("Pierre", "Riviere", role = c("aut", "cre"), email = "pierre@semencespaysannes.org"),
+    person("Ambrogio", "Costanzo", role = "ctb")
+    )
+Author: Pierre Riviere and Ambrogio Costanzo
+Maintainer: Pierre Riviere <pierre@semencespaysannes.org>
+Description: This package offers an interface to look at WP2 results from the H2020 Diversifood projet.
+License: GPL-3
+Depends:
+    dplyr,
+    DT,
+    shiny,
+    shinydashboard
+LazyLoad: yes
+LazyData: true
+RoxygenNote: 6.0.1
