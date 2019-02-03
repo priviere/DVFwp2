@@ -1,9 +1,9 @@
 Package: DVFwp2
 Type: Package
 Title: Results from WP2 of diversifood
-Version: 0.1
+Version: 0.2
 Encoding: UTF-8
-Date: 2018-10-15
+Date: 2019-02-19
 Authors@R: c(
     person("Pierre", "Riviere", role = c("aut", "cre"), email = "pierre@semencespaysannes.org"),
     person("Ambrogio", "Costanzo", role = "ctb")

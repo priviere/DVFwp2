@@ -1,22 +1,35 @@
 server <- function(input, output) {
-  # Combine the selected variables into a new dataDVFwp2 frame
-  output$table <- DT::renderDataTable(DT::datatable({
+  
+  output$table_link <- DT::renderDataTable(DT::datatable({
+    
     if( input$Country != "ALL"){
-      dataDVFwp2 = dplyr::filter(dataDVFwp2, Country == input$Country)
+      data_link = dplyr::filter(data_link, Country == input$Country)
     }
     if( input$Partner != "ALL"){
-      dataDVFwp2 = dplyr::filter(dataDVFwp2, Partner == input$Partner)
+      data_link = dplyr::filter(data_link, Partner == input$Partner)
     }
     if( input$Species != "ALL"){
-      dataDVFwp2 = dplyr::filter(dataDVFwp2, Species == input$Species)
+      data_link = dplyr::filter(data_link, Species == input$Species)
     }
-    if( input$Genetic.category != "ALL"){
-      dataDVFwp2 = dplyr::filter(dataDVFwp2, Genetic.category == input$Genetic.category)
+    data_link
+    }, escape = FALSE))
+  
+  output$table_rg <- DT::renderDataTable(DT::datatable({
+    
+    if( input$Country != "ALL"){
+      data_rg = dplyr::filter(data_rg, Country == input$Country)
+    }
+    if( input$Partner != "ALL"){
+      data_rg = dplyr::filter(data_rg, Partner == input$Partner)
+    }
+    if( input$Species != "ALL"){
+      data_rg = dplyr::filter(data_rg, Species == input$Species)
     }
     if( input$Entry.name != "ALL"){
-      dataDVFwp2 = dplyr::filter(dataDVFwp2, Entry.name == input$Entry.name)
-    }
-    dataDVFwp2
-    }))
+      data_rg = dplyr::filter(data_rg, Entry.name == input$Entry.name)
+      }
+    data_rg
+  }))
+  
 }
 
